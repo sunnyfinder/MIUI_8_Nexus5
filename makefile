@@ -2,13 +2,15 @@
 # Makefile for Nexus 5
 #
 
+PORT_PRODUCT = hammerhead_global
+
 # The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
 local-out-zip-file := MIUI_NEXUS5.zip
 
-# the location for local-ota to save target-file
+# The location for local-ota to save target-file
 local-previous-target-dir := 
 
 # All apps from original ZIP, but has smali files chanded
@@ -17,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := 
 
 # All apks from MIUI
-local-miui-removed-apps :=
+local-miui-removed-apps := FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket SogouInput XiaomiVip
 
 #local-miui-modified-apps :=
 

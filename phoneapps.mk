@@ -4,7 +4,6 @@ local-phone-priv-apps = $(private-phone-priv-apps)
 private-phone-apps := \
 	BasicDreams \
 	Bluetooth \
-	BluetoothMidiService \
 	CertInstaller \
 	FaceLock \
 	KeyChain \
@@ -12,6 +11,7 @@ private-phone-apps := \
 	NfcNci \
 	PacProcessor \
 	PrintSpooler \
+	qcrilmsgtunnel \
 	shutdownlistener \
 	Stk \
 	TimeService 
@@ -26,7 +26,4 @@ private-phone-priv-apps := \
 	ProxyHandler \
 	SharedStorageBackup \
 	Shell \
-	StatementService \
-	Telecom \
-	TelephonyProvider \
-	TeleService 
+	StatementService 
