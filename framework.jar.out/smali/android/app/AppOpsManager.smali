@@ -2841,7 +2841,6 @@
     .param p0, "op"    # I
 
     .prologue
-    .line 1030
     sget-object v0, Landroid/app/AppOpsManager;->sOpDefaultMode:[I
 
     aget v0, v0, p0
