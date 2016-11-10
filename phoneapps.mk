@@ -23,6 +23,7 @@ private-phone-priv-apps := \
 	ExternalStorageProvider \
 	FusedLocation \
 	InputDevices \
+	MusicFX \
 	ProxyHandler \
 	SharedStorageBackup \
 	Shell \

@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := 
 
 # All apks from MIUI
-local-miui-removed-apps := FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket SogouInput XiaomiVip
+local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution XiaomiVip XMPass
 
 #local-miui-modified-apps :=
 
@@ -58,3 +58,14 @@ local-pre-zip-misc:
 	@echo goodbye! miui prebuilt binaries!
 	rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
 	cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
+	@echo remove unnecessary libs!
+	rm -rf $(ZIP_DIR)/system/lib64
+	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libapssdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libminivenus.so
+	rm -rf $(ZIP_DIR)/system/lib/libmresearch.so
+	rm -rf $(ZIP_DIR)/system/lib/libsecurities_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libwebp.so
+	rm -rf $(ZIP_DIR)/system/lib/libweibosdkcore_sogou.so
+	rm -rf $(ZIP_DIR)/system/lib/libxmpass_sdk_patcher.so
+	rm -rf $(ZIP_DIR)/system/lib/xmpass_libweibosdkcore.so
