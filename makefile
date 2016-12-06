@@ -28,7 +28,7 @@ local-miui-modified-apps := MiuiSystemUI SecurityCenter
 local-density := XXHDPI
 
 # All apps need to be removed from original ZIP file
-#local-remove-apps   := 
+local-remove-apps   := 
 
 include phoneapps.mk
 
